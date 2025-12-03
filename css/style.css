@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;700&display=swap');
+@import url('fonts.css');
+
+:root {
+    --primary-color: #228be6;
+    --color-green: #8BE622;
+    --color-orange: #E67E22;
+    --color-greey: #ECF0F1;
+    --color-white: #FFFFFF;
+    --fuente-principal: 'Emberly', serif;
+    --fuente-secundaria: 'Montserrat', sans-serif;
+    --fuente-morganite: 'Morganite', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 0.5rem 0.5rem;
+    font-family: var(--fuente-principal);
+
+    .container-logo {
+
+        border: 1px solid red;
+        display: flex;
+    }
+
+    .nav {
+        width: 60%;
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        .nav-item {
+            /* border: 1px solid red; */
+
+
+            .nav-link {
+                text-decoration: none;
+                padding: 0.5rem 1.5rem;
+                color: var(--color-white);
+                font-family: var(--fuente-principal);
+                font-weight: normal;
+                border-radius: 0.5rem;
+
+            }
+
+            .nav-link:hover {
+                background-color: #22d2e65f;
+                color: var(--color-greey);
+            }
+        }
+    }
+
+    .container-cta {
+        /* border: 1px solid blue; */
+        display: flex;
+
+        button {
+            background-color: var(--color-orange);
+            border: none;
+            box-shadow: 5px 2px 5px 1px rgba(0, 0, 0, 0.6);
+            color: var(--color-white);
+            padding: 0.5rem 0.7rem;
+            border-radius: 20rem;
+            font-size: 1.5rem;
+            font-family: var(--fuente-principal);
+
+            cursor: pointer;
+
+        }
+    }
+
+
+}
+
+.main {
+    position: relative;
+
+    .title {
+        .image {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            /* border: 1px solid blue; */
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -1;
+            }
+        }
+
+        .texts {
+            /* border: 1px solid blue; */
+            position: absolute;
+            top: 0;
+            text-align: center;
+            height: 450px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.71);
+
+            h1 {
+                color: var(--primary-color);
+                font-family: var(--fuente-principal);
+                font-size: 4rem;
+                font-weight: bold;
+
+            }
+
+            p {
+                /* border: 1px solid blue; */
+                padding: 0 20vw;
+                font-size: 3rem;
+                font-family: var(--fuente-principal);
+            }
+        }
+    }
+
+    .servicios {
+        /* border: 1px solid blue; */
+
+        .servicios-title {
+            /* border: 1px solid green; */
+            text-align: center;
+            color: var(--primary-color);
+            font-family: var(--fuente-principal);
+        }
+
+        .items {
+            /* border: 1px solid green; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-evenly;
+
+            .card-border {
+                background: var(--color-green);
+                border-radius: 10px;
+                margin: 0;
+                padding: 0;
+                padding-top: 10px;
+                box-shadow: 0px 0px 10px -1px #000;
+
+                .card {
+                    border-radius: 10px;
+                    padding: 1rem;
+                    width: 350px;
+                    background-color: var(--color-white);
+                    margin: 0;
+                    display: flex;
+
+                    .icon {
+                        /* border: 1px solid blue; */
+                        height: 1.5rem;
+                        margin: 0;
+                        padding: 0;
+
+                        img {
+                            height: 100%;
+                            transform: scale(1.5);
+                        }
+                    }
+
+                    .text {
+                        padding-left: 1rem;
+
+                        h2 {
+                            /* border: 1px solid red; */
+                            color: var(--primary-color);
+                            padding: 0;
+                            margin: 0;
+                            font-family: var(--fuente-morganite);
+                            letter-spacing: normal;
+                            transform: scaleY(1.5);
+                            letter-spacing: 2px;
+                            font-weight: normal;
+                        }
+
+                        p {
+                            font-family: var(--fuente-secundaria);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mensaje {
+        margin-top: 2rem;
+        position: relative;
+
+
+        .wave {
+            position: relative;
+            clip-path: polygon(100% 100%, 0% 100%, 0.00% 52.20%, 2.22% 52.90%, 4.44% 53.33%, 6.67% 53.50%, 8.89% 53.40%, 11.11% 53.03%, 13.33% 52.40%, 15.56% 51.52%, 17.78% 50.39%, 20.00% 49.03%, 22.22% 47.47%, 24.44% 45.70%, 26.67% 43.77%, 28.89% 41.69%, 31.11% 39.49%, 33.33% 37.20%, 35.56% 34.84%, 37.78% 32.45%, 40.00% 30.05%, 42.22% 27.68%, 44.44% 25.36%, 46.67% 23.12%, 48.89% 20.99%, 51.11% 19.00%, 53.33% 17.17%, 55.56% 15.53%, 57.78% 14.09%, 60.00% 12.88%, 62.22% 11.90%, 64.44% 11.18%, 66.67% 10.71%, 68.89% 10.51%, 71.11% 10.58%, 73.33% 10.91%, 75.56% 11.51%, 77.78% 12.36%, 80.00% 13.46%, 82.22% 14.78%, 84.44% 16.33%, 86.67% 18.07%, 88.89% 19.98%, 91.11% 22.04%, 93.33% 24.23%, 95.56% 26.51%, 97.78% 28.86%, 100.00% 31.25%);
+            background: var(--primary-color);
+            height: 300px;
+            z-index: 0;
+        }
+
+        .text {
+            padding-left: 25vw;
+            padding-right: 25vw;
+            height: 300px;
+            /* border: 1px solid blue; */
+            text-align: center;
+            position: absolute;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--color-white);
+        }
+    }
+
+
+}
